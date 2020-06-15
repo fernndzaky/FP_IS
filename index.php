@@ -9,7 +9,7 @@ if(isset($_POST['submit'])){
     fwrite($myfile, $nl);
     fclose($myfile);
 
-    $command = escapeshellcmd('python ./movie_recommender_content_based.py');
+    $command = escapeshellcmd('python3 ./movie_recommender_content_based.py');
     #echo $command;
     $output = shell_exec($command);
     #echo "<pre>$output</pre>";
