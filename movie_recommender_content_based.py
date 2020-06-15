@@ -22,15 +22,15 @@ df = pd.read_csv("movie_dataset.csv")
 #print (df.head())
 
 #print columns using df.columns()
-i = 0
-f = open("movie_title.txt", "w")
-print(df['original_title'].count())
-for i in range(df['original_title'].count()):
-	print(df['original_title'][i])
-	f.write(df['original_title'][i])
-	f.write("\n")
-	i+=1
-f.close()
+#i = 0
+#f = open("movie_title.txt", "w")
+#print(df['original_title'].count())
+#for i in range(df['original_title'].count()):
+	#print(df['original_title'][i])
+	#f.write(df['original_title'][i])
+	#f.write("\n")
+	#i+=1
+#f.close()
 
 
 ##Step 2: Select Features and clear NaN data
