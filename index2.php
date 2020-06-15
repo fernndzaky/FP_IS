@@ -19,7 +19,7 @@ if(isset($_POST['getRecommendation'])){
         $nl = "\n";
         fwrite($myfile, $nl);
       }
-    $command = escapeshellcmd('python ./movie_recommender_collaborative.py');
+    $command = escapeshellcmd('python3 ./movie_recommender_collaborative.py');
     $output = shell_exec($command);
 
     fclose($myfile);
